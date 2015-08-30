@@ -73,6 +73,8 @@
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
+    int x = 0;
+    x++;
     NSString *newString = [textField.text stringByReplacingCharactersInRange:range withString:string];
     
     if (newString.length >= 3 && !autoCompleteLocked) {
